@@ -3,6 +3,7 @@ body {
     font-size: 16px;
     line-height: 1;
     background-color: lightblue;
+    flex-wrap: wrap;
   }
 
     
@@ -19,6 +20,11 @@ body {
     color:white;
   }
 
+  .search-result {
+    flex-wrap: wrap;
+
+
+  }
   .hide-result {
     display:none;
   }

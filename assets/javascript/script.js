@@ -13,20 +13,8 @@ var tempEl = document.querySelector("#temp");
 var windEl = document.querySelector("#wind-speed");
 var humidityEl = document.querySelector("#humidity");
 
+var apiKey = "abbf600e22d96772d150b6ff095a932f";
+var cityURL ='https://api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid=abbf600e22d96772d150b6ff095a932f';
 
-
-
-//function to make API calls
-var getCityWeather = function (city){
-    //var apiKey = "abbf600e22d96772d150b6ff095a932f";
-    var baseURL ='https://api.openweathermap.org/data/2.5/forecast?q=' + city + '&appid=abbf600e22d96772d150b6ff095a932f';
-fetch(baseURL)
-.then(function (response) {
-    console.log(response);
-})
-.then(function (data) {
-   displayWeather(data,city);
-   console.log(data);
-  });
-};
-
+var city = "Seattle";
+console.log(cityURL);
