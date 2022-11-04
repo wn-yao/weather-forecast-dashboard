@@ -17,5 +17,8 @@ body {
   .search-btn {
     background-color: darkkhaki;
     color:white;
+  }
 
+  .hide-result {
+    display:none;
   }
